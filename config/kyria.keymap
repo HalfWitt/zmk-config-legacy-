@@ -34,7 +34,7 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 		
-//*				navnum_layer {
+				navnum_layer {
 // NAVNUM Layer: Symbols & Navigation
 //
 // ,-------------------------------------------.                              ,-------------------------------------------.
@@ -47,15 +47,15 @@
 //                        | LAlt | MO(1)|LShift|      |      |  |      |      |RShift| MO(1)|R GUI |
 //                        |      |      |      |      |      |  |      |      |      |      |      |
 //                        `----------------------------------'  `----------------------------------'
-//			bindings = <
-//	&kp GRAVE	&kp EXCL	&kp AT		&kp UP		&kp PG_UP	&kp FSLH                                                		&kp BSLH	&kp N7  	&kp N8     	&kp N9  &kp STAR   	&kp BSLH
-//	&kp DLLR	&kp AMPS	&kp LEFT	&kp DOWN	&kp RIGHT	&kp LPAR                                                		&kp RPAR	&kp N4 		&kp N5    	&kp N6	&kp PLUS	&kp HASH
-//	&kp LCTRL	&kp PRCNT	&kp CARET	&kp PIPE	&kp PG_DN	&kp LBKT	&none		&none			&none		&none		&kp RBKT	&kp N1		&kp N2		&kp N3	&kp EQUAL	&kp MINUS
-//										&kp LALT	&mo 1		&kp LSFT	&kp TAB		&kp LALT		&kp RCTRL	&kp N0		&kp RSHFT	&mo 1		&kp RGUI
-//			>;
-//
-//			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-//*		};
+			bindings = <
+	&kp GRAVE	&kp EXCL	&kp AT		&kp UP		&kp PG_UP	&kp FSLH                                                		&kp BSLH	&kp N7  	&kp N8     	&kp N9  &kp STAR   	&kp BSLH
+	&kp DLLR	&kp AMPS	&kp LEFT	&kp DOWN	&kp RIGHT	&kp LPAR                                                		&kp RPAR	&kp N4 		&kp N5    	&kp N6	&kp PLUS	&kp HASH
+	&kp LCTRL	&kp PRCNT	&kp CARET	&kp PIPE	&kp PG_DN	&kp LBKT	&none		&none			&none		&none		&kp RBKT	&kp N1		&kp N2		&kp N3	&kp EQUAL	&kp MINUS
+										&kp LALT	&mo 1		&kp LSFT	&kp TAB		&kp LALT		&kp RCTRL	&kp N0		&kp RSHFT	&mo 1		&kp RGUI
+			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+		};
 		
 //*				shrdclmk_layer {
 // SHRDCLMK Layer: "Shredded" Colemak (Colemak DH with "S" & "R" swapped to better match QWERTY)
