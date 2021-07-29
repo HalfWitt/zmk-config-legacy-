@@ -71,7 +71,7 @@
 //                        |      |      |      |      |      |  |      |      |      |      |      |
 //                        `----------------------------------'  `----------------------------------'
 			bindings = <
-	&kp ESC		&kp Q	&kp W		&kp F		&kp P	&kp B                                           			&kp J		&kp L	&kp U		&kp Y		&kp SEMI	&kp DEL
+	&lt 3 ESC	&kp Q	&kp W		&kp F		&kp P	&kp B                                           			&kp J		&kp L	&kp U		&kp Y		&kp SEMI	&kp DEL
 	&kp TAB		&kp A	&kp S		&kp R		&kp T	&kp G                                           			&kp M		&kp N	&kp E		&kp I		&kp O		&kp SQT
 	&kp LCTRL	&kp Z	&kp X		&kp C		&kp D	&kp V 		&none		&none		&none		&none		&kp K		&kp H	&kp COMMA	&kp DOT		&kp QMARK	&kp MINUS
 									&tog 2		&mo 1	&kp LSHFT	&kp SPACE	&kp BSPC	&kp RET		&kp SPACE	&kp RSHFT	&mo 1	&kp RGUI
@@ -81,6 +81,29 @@
 		};
 		
 				fkeys_layer {
+// F-Keys Layer
+//
+// ,-------------------------------------------.                              ,-------------------------------------------.
+// |FKys/ESC|   Q  |   W  |   F  |   P  |   B  |                              |   J  |   L  |   U  |   Y  | ;  : |  Del   |
+// |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
+// |  TAB   |   A  |   S  |   R  |   T  |   G  |                              |   M  |   N  |   E  |   I  |  O   |  ' "   |
+// |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
+// |  LCtrl |   Z  |   X  |   C  |   D  |   V  |      |      |  |      |      |   K  |   H  | ,  < | . >  |  ?   |  - _   |
+// `----------------------+------+------+------|Space |Backsp|  |Enter |Space |------+------+------+----------------------'
+//                        | LAlt | MO(1)|LShift|      |      |  |      |      |RShift| MO(1)|R GUI |
+//                        |      |      |      |      |      |  |      |      |      |      |      |
+//                        `----------------------------------'  `----------------------------------'
+			bindings = <
+	&lt 3 ESC	&kp Q	&kp W		&kp F		&kp P	&kp B                                           			&kp J		&kp L	&kp U		&kp Y		&kp SEMI	&kp DEL
+	&kp TAB		&kp A	&kp S		&kp R		&kp T	&kp G                                           			&kp M		&kp N	&kp E		&kp I		&kp O		&kp SQT
+	&kp LCTRL	&kp Z	&kp X		&kp C		&kp D	&kp V 		&none		&none		&none		&none		&kp K		&kp H	&kp COMMA	&kp DOT		&kp QMARK	&kp MINUS
+									&tog 2		&mo 1	&kp LSHFT	&kp SPACE	&kp BSPC	&kp RET		&kp SPACE	&kp RSHFT	&mo 1	&kp RGUI
+			>;
+
+			sensor-bindings = <&inc_dec_kp LC(LEFT) LC(RIGHT) &inc_dec_kp PG_UP PG_DN>;
+		};
+
+//				fkeys_layer {
 // F-Keys Layer:
 //
 // ,-------------------------------------------.                              ,-------------------------------------------.
@@ -93,14 +116,14 @@
 //                        |BT Clr|      |      |      |      |  |      |      |      |      |R GUI |
 //                        |      |      |      |      |      |  |      |      |      |      |      |
 //                        `----------------------------------'  `----------------------------------'
-			bindings = <
-	&kp ESC		&none	&none		&none		&none	&none                                           			&none	&kp F7	&kp F8	&kp F9		&kp F10	&none
-	&none		&none	&none		&none		&none	&none                                           			&none	&kp F4	&kp F5	&kp F6		&kp F11	&none
-	&none		&none	&none		&none		&none	&none 		&none		&none		&none		&none		&none	&kp F1	&kp F2	&kp F3		&kp F12	&none
-									&bt  BT_CLR	&none	&none		&bt BT_PRV	&bt BT_NXT	&none		&kp RALT	&none	&none	&none
-			>;
-
-			sensor-bindings = <&inc_dec_kp LC(LEFT) LC(RIGHT) &inc_dec_kp PG_UP PG_DN>;
-		};
+//			bindings = <
+//	&kp ESC		&none	&none		&none		&none	&none                                           			&none	&kp F7	&kp F8	&kp F9		&kp F10	&none
+//	&none		&none	&none		&none		&none	&none                                           			&none	&kp F4	&kp F5	&kp F6		&kp F11	&none
+//	&none		&none	&none		&none		&none	&none 		&none		&none		&none		&none		&none	&kp F1	&kp F2	&kp F3		&kp F12	&none
+//									&bt  BT_CLR	&none	&none		&bt BT_PRV	&bt BT_NXT	&none		&kp RALT	&none	&none	&none
+//			>;
+//
+//			sensor-bindings = <&inc_dec_kp LC(LEFT) LC(RIGHT) &inc_dec_kp PG_UP PG_DN>;
+//		};
 	};
 };
