@@ -71,7 +71,7 @@
 //                        |      |      |      |      |      |  |      |      |      |      |      |
 //                        `----------------------------------'  `----------------------------------'
 			bindings = <
-	&lt 3 ESC	&kp Q	&kp W		&kp F		&kp P	&kp B                                           			&kp J		&kp L	&kp U		&kp Y		&kp SEMI	&kp DEL
+	&kp ESC	&kp Q	&kp W		&kp F		&kp P	&kp B                                           			&kp J		&kp L	&kp U		&kp Y		&kp SEMI	&kp DEL
 	&kp TAB		&kp A	&kp S		&kp R		&kp T	&kp G                                           			&kp M		&kp N	&kp E		&kp I		&kp O		&kp SQT
 	&kp LCTRL	&kp Z	&kp X		&kp C		&kp D	&kp V 		&none		&none		&none		&none		&kp K		&kp H	&kp COMMA	&kp DOT		&kp QMARK	&kp MINUS
 									&kp LALT	&mo 1	&kp LSHFT	&kp SPACE	&kp BSPC	&kp RET		&kp SPACE	&kp RSHFT	&mo 1	&kp RGUI
