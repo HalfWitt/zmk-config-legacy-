@@ -34,7 +34,7 @@
 	&lt 3 ESC	&kp Q	&kp W		&kp E		&kp R				&kp T                                           			&kp Y		&kp U				&kp I		&kp O		&kp P		&kp DEL
 	&kp TAB					&kp A	&kp S		&kp D		&kp F				&kp G                                           			&kp H		&kp J				&kp K		&kp L		&kp SEMI	&kp SQT
 	&kp LCTRL				&kp Z	&kp X		&kp C		&kp V				&kp B 		&none		&none		&none		&none		&kp N		&kp M				&kp COMMA	&kp DOT		&kp QMARK	&kp MINUS
-												&tog 2		&mo NAVNUM	&kp LSHFT	&kp SPACE	&kp BSPC	&kp RET		&kp SPACE	&kp RSHFT	&mo 1	&kp RGUI
+												&tog SHRDCLMK	&mo NAVNUM	&kp LSHFT	&kp SPACE	&kp BSPC	&kp RET		&kp SPACE	&kp RSHFT	&mo NAVNUM	&kp RGUI
 			>;
 
 			sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
@@ -57,7 +57,7 @@
 	&kp GRAVE	&kp EXCL	&kp AT		&kp UP		&kp PG_UP	&kp FSLH                                                		&kp BSLH	&kp N7  	&kp N8     	&kp N9  &kp STAR   	&kp BSLH
 	&kp DLLR	&kp AMPS	&kp LEFT	&kp DOWN	&kp RIGHT	&kp LPAR                                                		&kp RPAR	&kp N4 		&kp N5    	&kp N6	&kp PLUS	&kp HASH
 	&kp LCTRL	&kp PRCNT	&kp CARET	&kp PIPE	&kp PG_DN	&kp LBKT	&none		&none			&none		&none		&kp RBKT	&kp N1		&kp N2		&kp N3	&kp EQUAL	&kp MINUS
-										&tog 2		&mo 1		&kp LSFT	&kp TAB		&kp LALT		&kp RCTRL	&kp N0		&kp RSHFT	&mo 1		&kp RGUI
+										&tog SHRDCLMK	&mo NAVNUM	&kp LSFT	&kp TAB		&kp LALT		&kp RCTRL	&kp N0		&kp RSHFT	&mo NAVNUM	&kp RGUI
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp LC(LEFT) LC(RIGHT)>;
@@ -80,7 +80,7 @@
 	&lt 3 ESC	&kp Q	&kp W		&kp F		&kp P	&kp B                                           			&kp J		&kp L	&kp U		&kp Y		&kp SEMI	&kp DEL
 	&kp TAB		&kp A	&kp S		&kp R		&kp T	&kp G                                           			&kp M		&kp N	&kp E		&kp I		&kp O		&kp SQT
 	&kp LCTRL	&kp Z	&kp X		&kp C		&kp D	&kp V 		&none		&none		&none		&none		&kp K		&kp H	&kp COMMA	&kp DOT		&kp QMARK	&kp MINUS
-									&tog 2		&mo 1	&kp LSHFT	&kp SPACE	&kp BSPC	&kp RET		&kp SPACE	&kp RSHFT	&mo 1	&kp RGUI
+									&tog SHRDCLMK	&mo NAVNUM	&kp LSHFT	&kp SPACE	&kp BSPC	&kp RET		&kp SPACE	&kp RSHFT	&mo NAVNUM	&kp RGUI
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
@@ -103,7 +103,7 @@
 	&lt 3 ESC	&kp Q	&kp W		&kp F		&kp P	&kp B                                           			&kp J		&kp F7	&kp F8	&kp F9		&kp F10		&kp DEL
 	&kp TAB		&kp A	&kp S		&kp R		&kp T	&kp G                                           			&kp M		&kp F4	&kp F5	&kp F6		&kp F11		&kp SQT
 	&kp LCTRL	&kp Z	&kp X		&kp C		&kp D	&kp V 		&none		&none		&none		&none		&kp K		&kp F1	&kp F2	&kp F3		&kp F12		&kp MINUS
-									&bt  BT_CLR	&mo 1	&kp LSHFT	&bt BT_PRV	&bt BT_NXT	&kp RET		&kp RALT	&kp RSHFT	&mo 1	&kp RGUI
+									&bt  BT_CLR	&mo NAVNUM	&kp LSHFT	&bt BT_PRV	&bt BT_NXT	&kp RET		&kp RALT	&kp RSHFT	&mo NAVNUM	&kp RGUI
 			>;
 
 			sensor-bindings = <&inc_dec_kp LC(LEFT) LC(RIGHT) &inc_dec_kp PG_UP PG_DN>;
