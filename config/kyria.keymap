@@ -90,7 +90,7 @@
 // F-Keys Layer
 //
 // ,-------------------------------------------.                              ,-------------------------------------------.
-// |FKys/ESC|   Q  |   W  |   F  |   P  |   B  |                              |   J  |   L  |   U  |   Y  | ;  : |  Del   |
+// |FKys/ESC|  BT4 |  BT3 |  BT2 |  BT1 |  BT0 |                              |   J  |   L  |   U  |   Y  | ;  : |  Del   |
 // |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 // |  TAB   |   A  |   S  |   R  |   T  |   G  |                              |   M  |   N  |   E  |   I  |  O   |  ' "   |
 // |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
@@ -100,7 +100,7 @@
 //                        |      |      |      |      |      |  |      |      |      |      |      |
 //                        `----------------------------------'  `----------------------------------'
 			bindings = <
-	&lt 3 ESC	&kp Q	&kp W		&kp F		&kp P	&kp B                                           			&kp J		&kp F7	&kp F8	&kp F9		&kp F10		&kp DEL
+	&lt 3 ESC	&bt BT_SEL 4	&bt BT_SEL 3	&bt BT_SEL 2	&bt BT_SEL 1	&bt BT_SEL 0              			&kp J		&kp F7	&kp F8	&kp F9		&kp F10		&kp DEL
 	&kp TAB		&kp A	&kp S		&kp R		&kp T	&kp G                                           			&kp M		&kp F4	&kp F5	&kp F6		&kp F11		&kp SQT
 	&kp LCTRL	&kp Z	&kp X		&kp C		&kp D	&kp V 		&none		&none		&none		&none		&kp K		&kp F1	&kp F2	&kp F3		&kp F12		&kp MINUS
 									&bt  BT_CLR	&mo NAVNUM	&kp LSHFT	&bt BT_PRV	&bt BT_NXT	&kp RET		&kp RALT	&kp RSHFT	&mo NAVNUM	&kp RGUI
