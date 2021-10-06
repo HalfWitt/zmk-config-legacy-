@@ -12,7 +12,7 @@
 #define SHRDCLMK 1
 #define NAVNUM 2
 #define FKEYS 3
-#define STENO 4
+#define GAMING 4
 
 / {
 	keymap {
@@ -91,7 +91,7 @@
 // F-Keys Layer
 //
 // ,-------------------------------------------.                              ,-------------------------------------------.
-// |FKys/ESC|  BT4 |  BT3 |  BT2 |  BT1 |  BT0 |                              |   J  |  F7  |  F8  |  F9  | F10  |Tog STNO|
+// |FKys/ESC|  BT4 |  BT3 |  BT2 |  BT1 |  BT0 |                              |   J  |  F7  |  F8  |  F9  | F10  | Tog GMG|
 // |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 // |  TAB   |   A  |   S  |   R  |   T  |   G  |                              |   M  |  F4  |  F5  |  F6  | F11  |  ' "   |
 // |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
@@ -101,7 +101,7 @@
 //                        |      |      |      |      |      |  |      |      |      |      |      |
 //                        `----------------------------------'  `----------------------------------'
 			bindings = <
-	&lt 3 ESC	&bt BT_SEL 4	&bt BT_SEL 3	&bt BT_SEL 2	&bt BT_SEL 1	&bt BT_SEL 0              			&kp J		&kp F7	&kp F8	&kp F9		&kp F10		&tog STENO
+	&lt 3 ESC	&bt BT_SEL 4	&bt BT_SEL 3	&bt BT_SEL 2	&bt BT_SEL 1	&bt BT_SEL 0              			&kp J		&kp F7	&kp F8	&kp F9		&kp F10		&tog GAMING
 	&kp TAB		&kp A	&kp S		&kp R		&kp T	&kp G                                           			&kp M		&kp F4	&kp F5	&kp F6		&kp F11		&kp SQT
 	&kp LCTRL	&kp Z	&kp X		&kp C		&kp D	&kp V 		&none		&none		&none		&none		&kp K		&kp F1	&kp F2	&kp F3		&kp F12		&kp MINUS
 									&bt  BT_CLR	&mo NAVNUM	&kp LSHFT	&bt BT_PRV	&bt BT_NXT	&kp RET		&kp RALT	&kp RSHFT	&mo NAVNUM	&kp RGUI
@@ -110,24 +110,24 @@
 			sensor-bindings = <&inc_dec_kp LC(LEFT) LC(RIGHT) &inc_dec_kp PG_UP PG_DN>;
 		};
 
-		steno_layer {
-// STENO Layer
+		gaming_layer {
+// GAMING Layer
 //
 // ,-------------------------------------------.                              ,-------------------------------------------.
-// |FKys/ESC|   Q  |   W  |   E  |   R  |   T  |                              |   Y  |   U  |   I  |   O  |   P  | Tog GMG|
+// |FKys/ESC|   T  |   Q  |   W  |   E  |   R  |                              |   Y  |   U  |   I  |   O  |   P  | Tog GMG|
 // |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 // |  TAB   |   G  |   A  |   S  |   D  |   F  |                              |   H  |   J  |   K  |   L  | ;  : |  ' "   |
 // |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
 // |  LCtrl |   B  |   Z  |   X  |   C  |   V  |      |      |  |      |      |   N  |   M  | ,  < | . >  |  ?   |  - _   |
-// `----------------------+------+------+------|   C  |  V   |  |   N  |  M   |------+------+------+----------------------'
+// `----------------------+------+------+------|Space |Backsp|  |Enter |Space |------+------+------+----------------------'
 //                        | Tog 2| MO(2)|LShift|      |      |  |      |      |RShift| MO(2)|R GUI |
 //                        |      |      |      |      |      |  |      |      |      |      |      |
 //                        `----------------------------------'  `----------------------------------'
 			bindings = <
-	&lt 3 ESC	&kp Q		&kp W		&kp E		&kp R				&kp T                                           			&kp Y		&kp U		&kp I		&kp O		&kp P		&tog GAMING
-	&kp TAB		&kp A		&kp S		&kp D		&kp F				&kp G                                           			&kp H		&kp J		&kp K		&kp L		&kp SEMI	&kp SQT
-	&kp LCTRL	&kp Z		&kp X		&kp C		&kp V				&kp B 		&none		&none		&none		&none		&kp N		&kp M		&kp COMMA	&kp DOT		&kp QMARK	&kp MINUS
-												&tog SHRDCLMK		&mo NAVNUM	&kp LSHFT	&kp C	&kp V	&kp N		&kp M	&kp RSHFT	&mo NAVNUM	&kp RGUI
+	&lt 3 ESC	&kp T		&kp Q		&kp W		&kp E				&kp R                                           			&kp Y		&kp U		&kp I		&kp O		&kp P		&tog GAMING
+	&kp TAB		&kp LSHFT	&kp A		&kp S		&kp D				&kp F                                           			&kp H		&kp J		&kp K		&kp L		&kp SEMI	&kp SQT
+	&kp LCTRL	&kp B		&kp Z		&kp X		&kp C				&kp V 		&none		&none		&none		&none		&kp N		&kp M		&kp COMMA	&kp DOT		&kp QMARK	&kp MINUS
+												&tog SHRDCLMK		&mo NAVNUM	&kp LSHFT	&kp SPACE	&kp BSPC	&kp RET		&kp SPACE	&kp RSHFT	&mo NAVNUM	&kp RGUI
 			>;
 
 			sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
